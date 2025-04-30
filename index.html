@@ -1,0 +1,71 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+  <script src="./index.js" defer></script>
+  
+  <style>
+      
+      table, th, td {
+           border: 1px solid;
+      }
+      
+      #leftbox {
+                float:left; 
+                width:33%;
+                height:300px;
+      }
+      #middlebox{
+                float:left; 
+                width:33%;
+                height:300px;
+        }
+        #rightbox{
+                float:right;
+                width:33%;
+                height:300px;
+        }
+        h1{
+                color:black;
+                text-align:center;
+        }
+     
+     
+      
+  </style>
+</head>
+<body>
+  
+  <h1> Weather Prediction NN </h1>
+  
+  
+  
+  
+    <div id = "boxes1">
+         
+              
+  <input type="text" id="box1" value="0"> Temp in C (-10 to 40) <br/>
+  <input type="text" id="box2" value="0"> Humidity  (30 to 90) <br/>
+  <input type="text" id="box3" value="0"> Wind speed kmph ( 0 to 30)  <br/>
+
+    </div> 
+      
+  <div>
+      <input style="background-color:red" type="button" value="Run" onclick="runExample()"/>
+   </div>
+  
+
+        <div id = "boxes2">
+              
+           
+              <h2>Prediction </h2>
+              
+               <div id="predictions">
+
+               </div>
+              
+
+        </div>
+  
+
+</body>
+</html>
